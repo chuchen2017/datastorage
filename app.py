@@ -1,6 +1,6 @@
 import gradio as gr
 import plotly.graph_objects as go
-f#rom datasets import load_dataset
+from datasets import load_dataset
 
 dataset = load_dataset("gradio/NYC-Airbnb-Open-Data", split="train")
 df = dataset.to_pandas()
