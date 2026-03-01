@@ -1,2 +1,3 @@
+gradio
 plotly
-datasets
+pandas
