@@ -8,8 +8,9 @@ import random
 # Load the abnormal users trajectories data
 df = pd.read_csv("data/abnormal_users_trajectories.csv")
 
-# Load friends trajectories data
-friends_df = pd.read_csv("data/users_have_overlap_with_abnormal.csv")
+# Load friends trajectories data from GitHub (large file)
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/chuchen2017/datastorage/main/users_have_overlap_with_abnormal.csv"
+friends_df = pd.read_csv(GITHUB_RAW_URL)
 
 # Load covisit data
 with open("data/agent_pair_covisits.json", "r") as f:
